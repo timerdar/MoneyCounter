@@ -1,14 +1,14 @@
 class Balance:
     def __init__(self, balance_num: int) -> None:
-        self.balance = balance_num
+        self.__balance = balance_num
         pass
     
     def get_current_balance(self) -> int:
-        return self.balance
+        return self.__balance
     
     def income(self, money: int) -> None:
-        self.balance += money
+        self.__balance += money
     
     def outgo(self, money: int) -> None:
-        self.balance -= money
+        self.__balance -= money
     
